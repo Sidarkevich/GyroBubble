@@ -1,5 +1,7 @@
 using System;
+using NUnit.Framework;
 using UnityEngine;
+using System.Collections.Generic;
 
 public class BubbleController : MonoBehaviour
 {
@@ -10,6 +12,9 @@ public class BubbleController : MonoBehaviour
     [Space]
     [SerializeField] private Vector3 defaultGravityVector;
     [SerializeField] private Vector3 antiGravityVector;
+    [Space]
+    [SerializeField] private List<Vent> leftVents;
+    [SerializeField] private List<Vent> rightVents;
     
     private bool _isDefaultGravity = true;
     
@@ -35,6 +40,38 @@ public class BubbleController : MonoBehaviour
             
             defaultState.SetActive(!defaultState.activeInHierarchy);
             gumState.SetActive(!gumState.activeInHierarchy);
+        }
+
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            foreach (var vent in leftVents)
+            {
+                vent.SetState(true);
+            }   
+        }
+
+        if (Input.GetKeyUp(KeyCode.A))
+        {
+            foreach (var vent in leftVents)
+            {
+                vent.SetState(false);
+            }  
+        }
+
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            foreach (var vent in rightVents)
+            {
+                vent.SetState(true);
+            }   
+        }
+
+        if (Input.GetKeyUp(KeyCode.D))
+        {
+            foreach (var vent in rightVents)
+            {
+                vent.SetState(false);
+            }  
         }
     }
 }
