@@ -1333,6 +1333,7 @@ GameObject:
   - component: {fileID: 1070175146}
   - component: {fileID: 1070175145}
   - component: {fileID: 1070175144}
+  - component: {fileID: 1070175147}
   m_Layer: 0
   m_Name: Burrel
   m_TagString: Untagged
@@ -1431,6 +1432,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1070175142}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1070175147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070175142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83873c0f4c5bd2b4bac375331d43b0db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forcePower: 1
 --- !u!1 &1107848348
 GameObject:
   m_ObjectHideFlags: 0

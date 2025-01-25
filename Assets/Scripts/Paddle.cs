@@ -37,8 +37,6 @@ public class Paddle : MonoBehaviour
     
     private void Update()
     {
-        //transform.rotation = Quaternion.Euler(0, yAngle ,minZ + _rotationValue * (maxZ - minZ));
-        
         if (Input.GetKey(KeyCode.S))
         {
             RotationValue += rotationSpeed;
