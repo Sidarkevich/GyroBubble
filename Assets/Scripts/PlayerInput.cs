@@ -10,12 +10,12 @@ public class PlayerInput : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.A))
         {
-            movable.Move(Vector3.left, forceValue);
+            movable.Move(Vector3.right, forceValue);
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            movable.Move(Vector3.right, forceValue);
+            movable.Move(Vector3.left, forceValue);
         }
     }
 }

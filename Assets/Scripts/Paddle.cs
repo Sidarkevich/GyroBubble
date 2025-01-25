@@ -4,13 +4,13 @@ using UnityEngine;
 public class Paddle : MonoBehaviour
 {
     [SerializeField] private Rigidbody rb;
-    [SerializeField] private float yAngle;
     [SerializeField] private float rotationSpeed;
     [SerializeField] private float minZ;
     [SerializeField] private float maxZ;
     
-    [SerializeField] private float _rotationValue;
-
+    private float _rotationValue;
+    private Vector3 _startRotation;
+    
     private const float minValue = 0f;
     private const float maxValue = 1f;
     
@@ -34,7 +34,12 @@ public class Paddle : MonoBehaviour
             _rotationValue = value;
         }
     }
-    
+
+    private void Start()
+    {
+        _startRotation = transform.rotation.eulerAngles;
+    }
+
     private void Update()
     {
         if (Input.GetKey(KeyCode.S))
@@ -49,7 +54,8 @@ public class Paddle : MonoBehaviour
     
     void FixedUpdate()
     {
-        Quaternion deltaRotation = Quaternion.Euler(0f, yAngle,minZ + _rotationValue * (maxZ - minZ));
+        //вращать надо по х
+        Quaternion deltaRotation = Quaternion.Euler(minZ + _rotationValue * (maxZ - minZ), _startRotation.y,_startRotation.z);
         
         rb.MoveRotation(deltaRotation);
     }
