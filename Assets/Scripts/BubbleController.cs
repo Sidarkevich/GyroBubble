@@ -5,6 +5,8 @@ public class BubbleController : MonoBehaviour
 {
     [SerializeField] private GameObject defaultState;
     [SerializeField] private GameObject gumState;
+    [SerializeField] private Rigidbody defaultBody;
+    [SerializeField] private Rigidbody gumBody;
     [Space]
     [SerializeField] private Vector3 defaultGravityVector;
     [SerializeField] private Vector3 antiGravityVector;
@@ -15,6 +17,9 @@ public class BubbleController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            defaultBody.linearVelocity = new Vector3();
+            gumBody.linearVelocity = new Vector3();
+            
             if (_isDefaultGravity)
             {
                 _isDefaultGravity = false;
