@@ -1,0 +1,5 @@
+C:/Users/Yaraslau/Desktop/Repo/GyroBubble/.utmp/RelWithDebInfo/441v32f6/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/Yaraslau/Desktop/Repo/GyroBubble/.utmp/RelWithDebInfo/441v32f6/arm64-v8a/CMakeFiles/rebuild_cache.dir
+C:/Users/Yaraslau/Desktop/Repo/GyroBubble/.utmp/RelWithDebInfo/441v32f6/arm64-v8a/GameActivity/CMakeFiles/game.dir
+C:/Users/Yaraslau/Desktop/Repo/GyroBubble/.utmp/RelWithDebInfo/441v32f6/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+C:/Users/Yaraslau/Desktop/Repo/GyroBubble/.utmp/RelWithDebInfo/441v32f6/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir

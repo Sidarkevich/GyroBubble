@@ -1,0 +1,2 @@
+C:\Users\Yaraslau\Desktop\Repo\GyroBubble\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\CMakeLists.txt
+C:\Users\Yaraslau\Desktop\Repo\GyroBubble\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt
