@@ -8,14 +8,6 @@ public class PlayerInput : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.A))
-        {
-            movable.Move(Vector3.right, forceValue);
-        }
 
-        if (Input.GetKey(KeyCode.D))
-        {
-            movable.Move(Vector3.left, forceValue);
-        }
     }
 }
