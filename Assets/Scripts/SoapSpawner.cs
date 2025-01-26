@@ -12,6 +12,6 @@ public class SoapSpawner : MonoBehaviour
 
     void Spawn()
     {
-        Instantiate(soapPrefab.transform);
+        Instantiate(soapPrefab, transform);
     }
 }
