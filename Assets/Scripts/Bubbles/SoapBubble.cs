@@ -10,6 +10,6 @@ public class SoapBubble : MonoBehaviour
 
     private void Update()
     {
-        transform.Translate(0, Time.deltaTime * 0.5f, 0);
+        transform.Translate(0, Time.deltaTime * 1.5f, 0);
     }
 }
