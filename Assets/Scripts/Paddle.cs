@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Paddle : MonoBehaviour
 {
+    [SerializeField] private UnityEngine.KeyCode inputCode;
     [SerializeField] private Rigidbody rb;
     [SerializeField] private float rotationSpeed;
     [SerializeField] private float minZ;
@@ -42,7 +43,7 @@ public class Paddle : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(inputCode))
         {
             RotationValue += rotationSpeed;
             

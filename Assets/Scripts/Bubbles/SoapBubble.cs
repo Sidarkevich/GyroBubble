@@ -28,7 +28,7 @@ public class SoapBubble : MonoBehaviour
         
         Vector3 randomDirection = new Vector3(
             UnityEngine.Random.Range(-1f, 1f),
-            UnityEngine.Random.Range(0f, 0f),
+            UnityEngine.Random.Range(-1f, 0f),
             UnityEngine.Random.Range(0f, 0f)
         ).normalized;
         

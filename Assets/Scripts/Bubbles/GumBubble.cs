@@ -1,5 +1,7 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GumBubble : MonoBehaviour
 {
@@ -11,5 +13,10 @@ public class GumBubble : MonoBehaviour
         
         if (soap != null)
             soap.SetOther(rb);
+    }
+
+    private void OnBecameInvisible()
+    {
+        SceneManager.LoadScene(0);
     }
 }
