@@ -4,10 +4,12 @@ using UnityEngine;
 public class GumBubble : MonoBehaviour
 {
     [SerializeField] private Rigidbody rb;
-    
-    private void OnTriggerEnter(Collider other)
+
+    private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.name == "Container")
-            rb.angularVelocity = Vector3.zero;
+        var soap = other.transform.parent.gameObject.GetComponent<SoapBubble>();
+        
+        if (soap != null)
+            soap.SetOther(rb);
     }
 }
